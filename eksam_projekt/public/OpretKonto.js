@@ -8,9 +8,10 @@ class OpretNyKunde {
         this.email = email;
         this.fødselsdag = new Date(fødselsdag); // Brug nullish coalescing operator for at undgå fejl
 
-    const fødselsår = this.fødselsdag.getFullYear();
+
+    const fødselsÅr = this.fødselsdag.getFullYear();
     const nuværendeÅr = new Date().getFullYear();
-    const alder = nuværendeÅr - fødselsår
+    const alder = nuværendeÅr - fødselsÅr;
 
         // Tjek om kunden er under 18 år
         if (alder < 18) {
