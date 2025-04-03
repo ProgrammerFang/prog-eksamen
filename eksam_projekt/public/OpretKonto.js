@@ -7,7 +7,6 @@ class OpretNyKunde {
         this.kunde_ID = '';
         this.email = email;
         this.fødselsdag = new Date(fødselsdag); // Brug nullish coalescing operator for at undgå fejl
-        this.pho = pho9
 
     const fødselsÅr = this.fødselsdag.getFullYear();
     const nuværendeÅr = new Date().getFullYear();
